@@ -9,7 +9,24 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
+
+    <div id="container">
+		<div id="header">
+        
+		</div>
+        
+        
+  <div id="contentContainter">
+   	<div id="contentLeft">
+    </div>
+    
+   	<div id="contentRight">
+           @RenderBody()
+    </div>
+
+  </div>
+</div>
+
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)

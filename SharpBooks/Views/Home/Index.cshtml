@@ -6,17 +6,7 @@
 @using PagedList.Mvc;
 @using PagedList;
 
-<div id="container">
-		<div id="header">
-        
-		</div>
-        
-        
-  <div id="contentContainter">
-   	<div id="contentLeft">
-    </div>
-    
-   	<div id="contentRight">
+
            @foreach (var item in ViewBag.pageOfBooks)
            {
                <div class ="bookSmall">
@@ -27,7 +17,4 @@
                    @Html.ActionLink("More Details", "Details", new { Id = item.Id})
                </div>
            }
-    </div>
 
-  </div>
-</div>

@@ -69,6 +69,7 @@ namespace SharpBooks.api
             }
         }
 
+
         public void UpdateStock(Book book)
         {
             using (var redisClient = RedisManager.GetClient())
